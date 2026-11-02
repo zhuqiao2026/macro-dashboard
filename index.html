@@ -103,15 +103,15 @@
 .interp .lb{font-weight:700;color:#7db4ff}
 /* phone refinements (768px and below): vertical stack, larger touch-friendly text */
 @media (max-width: 768px) {
-  .ind-body{flex-direction:column !important}
-  .ind-chart{width:100% !important;height:280px !important;flex:none !important;min-width:0}
-  .ind-table-wrap{width:100% !important;max-width:100% !important;overflow-x:auto !important;max-height:none !important}
+  .ind-body{flex-direction:row !important;gap:6px !important}
+  .ind-chart{flex:1 1 0 !important;height:260px !important;min-width:0 !important;width:auto !important}
+  .ind-table-wrap{width:108px !important;max-width:108px !important;min-width:108px !important;overflow-x:hidden !important;overflow-y:auto !important;max-height:260px !important}
   .ind-header{padding:12px 12px 8px !important}
   .ind-header h3{font-size:16px !important}
   .ind-meta{font-size:11px !important}
   .interp{font-size:13px !important;line-height:1.7 !important;padding:12px !important;margin:0 0 10px !important}
-  .data-table{font-size:12px !important}
-  .data-table th,.data-table td{padding:6px 8px !important}
+  .data-table{font-size:10px !important}
+  .data-table th,.data-table td{padding:3px 4px !important;white-space:nowrap !important}
   .kpis{grid-template-columns:repeat(2,1fr) !important;gap:8px !important;padding:8px !important}
   .kpi{min-height:0 !important;padding:10px 8px !important}
   .kpi .v{font-size:22px !important}
@@ -119,7 +119,10 @@
   .kpi .t{font-size:11px !important;white-space:normal !important;line-height:1.5 !important}
   .score{margin:0 8px 8px !important;padding:10px !important}
   .score .num{font-size:32px !important}
-  .score .bars{gap:10px !important}
+  .score .bars{gap:6px !important;flex-wrap:nowrap !important}
+  .score .bar-item{flex:1 1 0 !important;min-width:0 !important}
+  .score .bar-item .n{font-size:10px !important;white-space:nowrap !important}
+  .score .bar-item .v{font-size:14px !important}
   .ind-section{margin:10px 2px !important;padding:10px 8px !important}
   body{padding:0 !important}
   main{max-width:100% !important;padding:10px 4px 30px !important}
