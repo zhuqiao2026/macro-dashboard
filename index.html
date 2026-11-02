@@ -101,6 +101,32 @@
 .kpis{grid-template-columns:repeat(3,1fr)}
 .interp{background:#1e3a5f;border-left:4px solid #3b82f6;padding:10px 14px;margin:0 18px 12px;border-radius:0 6px 6px 0;font-size:13px;line-height:1.7;color:#dbe4f3}
 .interp .lb{font-weight:700;color:#7db4ff}
+/* phone refinements (768px and below): vertical stack, larger touch-friendly text */
+@media (max-width: 768px) {
+  .ind-body{flex-direction:column !important}
+  .ind-chart{width:100% !important;height:280px !important;flex:none !important;min-width:0}
+  .ind-table-wrap{width:100% !important;max-width:100% !important;overflow-x:auto !important;max-height:none !important}
+  .ind-header{padding:12px 12px 8px !important}
+  .ind-header h3{font-size:16px !important}
+  .ind-meta{font-size:11px !important}
+  .interp{font-size:13px !important;line-height:1.7 !important;padding:12px !important;margin:0 0 10px !important}
+  .data-table{font-size:12px !important}
+  .data-table th,.data-table td{padding:6px 8px !important}
+  .kpis{grid-template-columns:repeat(2,1fr) !important;gap:8px !important;padding:8px !important}
+  .kpi{min-height:0 !important;padding:10px 8px !important}
+  .kpi .v{font-size:22px !important}
+  .kpi .k{font-size:12px !important}
+  .kpi .t{font-size:11px !important;white-space:normal !important;line-height:1.5 !important}
+  .score{margin:0 8px 8px !important;padding:10px !important}
+  .score .num{font-size:32px !important}
+  .score .bars{gap:10px !important}
+  .ind-section{margin:12px 8px !important;padding:12px !important}
+  body{padding:0 4px !important}
+  .ov{padding:0 8px 8px !important}
+  .ovt{font-size:12px !important;overflow-x:auto !important}
+  .cal{margin:0 8px 8px !important}
+  header{padding:14px 10px !important}
+}
 </style>
 </head>
 <body>
