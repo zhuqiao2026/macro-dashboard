@@ -940,11 +940,11 @@ function initCharts() {
     }
     const option = {
       backgroundColor: 'transparent',
-      grid: {left: 48, right: 16, top: 24, bottom: 52},
+      grid: {left: 48, right: 16, top: 24, bottom: 58},
       tooltip: {trigger: 'axis', confine: true,
         backgroundColor: '#12141a', borderColor: '#23262e', textStyle: {color: '#e6e9f0'}},
       xAxis: {type: 'category', data: dates,
-        axisLabel: {color: '#8b93a7', fontSize: 10, rotate: 45, interval: Math.ceil(dates.length/12)}},
+        axisLabel: {color: '#8b93a7', fontSize: 10, rotate: 45, interval: Math.ceil(dates.length/5)}},
       yAxis: {type: 'value', scale: true,
         axisLabel: {color: '#8b93a7', fontSize: 10},
         splitLine: {lineStyle: {color: '#12141a'}}},
