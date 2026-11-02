@@ -112,7 +112,10 @@
 .interp .lb{font-weight:700;color:#7db4ff}
 /* phone refinements (768px and below): vertical stack, larger touch-friendly text */
 @media (max-width: 768px) {
-  .ind-body{flex-direction:row !important;gap:0px !important}
+  .ind-body{display:grid !important;grid-template-areas:"header header" "sidebar main" !important;grid-template-rows:auto 1fr !important;grid-template-columns:auto 1fr !important;gap:0 !important;min-height:100vh}
+header{grid-area:header !important}
+aside#sidebar{grid-area:sidebar !important}
+main#main{grid-area:main !important;min-width:0 !important}
   .ind-chart{flex:1 1 0 !important;height:240px !important;min-width:0 !important;width:auto !important}
   .ind-table-wrap{width:72px !important;max-width:72px !important;min-width:72px !important;overflow-x:hidden !important;overflow-y:auto !important;max-height:240px !important;margin-right:-6px !important}
   .ind-header{padding:12px 12px 8px !important}
