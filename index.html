@@ -186,68 +186,21 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div class="layout">
   <aside id="sidebar"><div class="side-cat"><div class="side-cat-title">采购经理指数</div><div class="side-item" data-id="pmi_mfg" data-name="制造业采购经理指数">制造业采购经理指数</div><div class="side-item" data-id="pmi_nonmfg" data-name="非制造业采购经理指数">非制造业采购经理指数</div><div class="side-item" data-id="pmi_caixin" data-name="财新制造业PMI">财新制造业PMI</div></div><div class="side-cat"><div class="side-cat-title">国民经济核算</div><div class="side-item" data-id="gdp" data-name="国内生产总值(GDP)">国内生产总值(GDP)</div><div class="side-item" data-id="gdp_primary" data-name="GDP第一产业">GDP第一产业</div><div class="side-item" data-id="gdp_secondary" data-name="GDP第二产业">GDP第二产业</div><div class="side-item" data-id="gdp_tertiary" data-name="GDP第三产业">GDP第三产业</div></div><div class="side-cat"><div class="side-cat-title">工业</div><div class="side-item" data-id="ind_prod" data-name="规模以上工业增加值">规模以上工业增加值</div></div><div class="side-cat"><div class="side-cat-title">固定资产投资</div><div class="side-item" data-id="fai" data-name="固定资产投资(不含农户)">固定资产投资(不含农户)</div></div><div class="side-cat"><div class="side-cat-title">消费</div><div class="side-item" data-id="retail" data-name="社会消费品零售总额">社会消费品零售总额</div></div><div class="side-cat"><div class="side-cat-title">价格指数</div><div class="side-item" data-id="cpi" data-name="居民消费价格指数(CPI)">居民消费价格指数(CPI)</div><div class="side-item" data-id="cpi_city" data-name="CPI城市">CPI城市</div><div class="side-item" data-id="cpi_rural" data-name="CPI农村">CPI农村</div><div class="side-item" data-id="ppi" data-name="工业生产者出厂价格指数(PPI)">工业生产者出厂价格指数(PPI)</div></div><div class="side-cat"><div class="side-cat-title">对外贸易</div><div class="side-item" data-id="exports" data-name="出口(美元计)">出口(美元计)</div><div class="side-item" data-id="imports" data-name="进口(美元计)">进口(美元计)</div><div class="side-item" data-id="trade_balance" data-name="贸易差额(美元计)">贸易差额(美元计)</div></div><div class="side-cat"><div class="side-cat-title">金融</div><div class="side-item" data-id="m2" data-name="M2货币供应">M2货币供应</div><div class="side-item" data-id="m1" data-name="M1货币供应">M1货币供应</div><div class="side-item" data-id="m0" data-name="M0流通中现金">M0流通中现金</div><div class="side-item" data-id="lpr1y" data-name="1年期LPR">1年期LPR</div><div class="side-item" data-id="lpr5y" data-name="5年期LPR">5年期LPR</div><div class="side-item" data-id="fx_reserves" data-name="外汇储备">外汇储备</div></div><div class="side-cat"><div class="side-cat-title">房地产</div><div class="side-item" data-id="house_bj" data-name="新建商品住宅价格指数-北京">新建商品住宅价格指数-北京</div><div class="side-item" data-id="house_sh" data-name="新建商品住宅价格指数-上海">新建商品住宅价格指数-上海</div></div><div class="side-cat"><div class="side-cat-title">财政</div><div class="side-item" data-id="tax" data-name="税收收入">税收收入</div></div></aside>
   <main id="main">
-
-<!-- v6 同心圆 Hero：中心水温+中环5分项+外环6KPI -->
-<div class="hero-v12" style="position:relative;background:#0e1015;border:1px solid #23262e;border-radius:20px;margin:8px 2px;height:460px;overflow:hidden">
-<svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 1200 460" preserveAspectRatio="none">
-<path d="M20,25 L581.3,25 Q513.6,85.0 485.6,145 L20,145 Z" fill="rgba(251,191,36,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M20,162 L481.0,162 Q473.0,230.0 481.0,298 L20,298 Z" fill="rgba(129,140,248,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M20,315 L485.6,315 Q513.6,375.0 581.3,435 L20,435 Z" fill="rgba(251,191,36,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M1180,25 L618.7,25 Q686.4,85.0 714.4,145 L1180,145 Z" fill="rgba(129,140,248,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M1180,162 L719.0,162 Q727.0,230.0 719.0,298 L1180,298 Z" fill="rgba(129,140,248,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M1180,315 L714.4,315 Q686.4,375.0 618.7,435 L1180,435 Z" fill="rgba(251,191,36,0.10)" stroke="rgba(255,255,255,0.09)"/>
-<path d="M600.0,15.0 A155,215 0 0 1 747.4,163.6 L676.1,205.3 A80,80 0 0 0 600.0,150.0 Z" fill="#818cf8" fill-opacity="0.20" stroke="#818cf8" stroke-opacity="0.55"/>
-<path d="M747.4,163.6 A155,215 0 0 1 691.1,403.9 L647.0,294.7 A80,80 0 0 0 676.1,205.3 Z" fill="#fbbf24" fill-opacity="0.20" stroke="#fbbf24" stroke-opacity="0.55"/>
-<path d="M691.1,403.9 A155,215 0 0 1 508.9,403.9 L553.0,294.7 A80,80 0 0 0 647.0,294.7 Z" fill="#818cf8" fill-opacity="0.20" stroke="#818cf8" stroke-opacity="0.55"/>
-<path d="M508.9,403.9 A155,215 0 0 1 452.6,163.6 L523.9,205.3 A80,80 0 0 0 553.0,294.7 Z" fill="#fbbf24" fill-opacity="0.20" stroke="#fbbf24" stroke-opacity="0.55"/>
-<path d="M452.6,163.6 A155,215 0 0 1 600.0,15.0 L600.0,150.0 A80,80 0 0 0 523.9,205.3 Z" fill="#818cf8" fill-opacity="0.20" stroke="#818cf8" stroke-opacity="0.55"/>
-<text x="669.1" y="110.7" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="11" font-weight="600">实体增长12</text>
-<text x="711.7" y="275.6" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="11" font-weight="600">价格稳定59</text>
-<text x="600.0" y="377.5" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="11" font-weight="600">信用扩张4</text>
-<text x="488.3" y="275.6" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="11" font-weight="600">外需34.5</text>
-<text x="530.9" y="110.7" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="11" font-weight="600">市场预期43</text>
-<circle cx="600" cy="230" r="80" fill="#0e1015"/>
-</svg>
-<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 50% 35%,#1a1d24,#0c0e12);border:2px solid #f5a623;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:5">
-<div style="font-size:42px;font-weight:800;color:#f5a623;line-height:1">27.8</div>
-<div style="font-size:10px;color:#8b93a7;margin-top:4px">宏观水温 / 100</div>
+<div class="score"><div class="row"><div><span class="num">27.8</span> <span class="lbl">宏观水温 / 100</span></div><div class="bars">
+<div class="bar-item"><div class="n">实体增长</div><div class="v">12.0</div><div class="b"><div class="f" style="width:12.0%"></div></div></div>
+<div class="bar-item"><div class="n">价格稳定</div><div class="v">59.0</div><div class="b"><div class="f" style="width:59.0%"></div></div></div>
+<div class="bar-item"><div class="n">信用扩张</div><div class="v">4.0</div><div class="b"><div class="f" style="width:4.0%"></div></div></div>
+<div class="bar-item"><div class="n">外需</div><div class="v">34.5</div><div class="b"><div class="f" style="width:34.5%"></div></div></div>
+<div class="bar-item"><div class="n">市场预期</div><div class="v">43.0</div><div class="b"><div class="f" style="width:43.0%"></div></div></div>
+</div></div>
+<div class="kpis">
+<div class="kpi"><div class="k">CPI <span style="font-size:10px;color:#6b7280">· 月度</span></div><div class="v">0.9<span class="u"> %</span></div><div class="t up">前值 0.8% ｜ ↑ +0.1个百分点</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2026-09</div></div>
+<div class="kpi"><div class="k">制造业PMI <span style="font-size:10px;color:#6b7280">· 月度</span></div><div class="v">49.3<span class="u"> </span></div><div class="t dn">↓ -0.8点 ｜ 低于荣枯线</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2026-10</div></div>
+<div class="kpi"><div class="k">GDP <span style="font-size:10px;color:#6b7280">· 季度</span></div><div class="v">4.6<span class="u"> %</span></div><div class="t dn">前值 4.7% ｜ ↓ -0.1个百分点</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2026-Q3</div></div>
+<div class="kpi"><div class="k">M2 <span style="font-size:10px;color:#6b7280">· 月度</span></div><div class="v">7.2<span class="u"> %</span></div><div class="t dn">前值 7.5% ｜ ↓ -0.3个百分点</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2026-09</div></div>
+<div class="kpi"><div class="k">出口 <span style="font-size:10px;color:#6b7280">· 月度</span></div><div class="v">7.2<span class="u"> %</span></div><div class="t fl">前值 7.2% ｜ → +0个百分点</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2025-09</div></div>
+<div class="kpi"><div class="k">PPI <span style="font-size:10px;color:#6b7280">· 月度</span></div><div class="v">5.0<span class="u"> %</span></div><div class="t up">前值 3.8% ｜ ↑ +1.2个百分点</div><div class="pd" style="font-size:10px;color:#6b7280;margin-top:2px">最新：2026-09</div></div>
 </div>
-<div style="position:absolute;left:40px;top:38px;z-index:4"><div style="font-size:11px;color:#8b93a7">CPI · 月度</div><div style="font-size:26px;font-weight:800;color:#f5a623">0.9<span style="font-size:11px;font-weight:400"> %</span></div><div style="font-size:10px;color:#fbbf24">↑ +0.1pp</div></div>
-<div style="position:absolute;left:40px;top:175px;z-index:4"><div style="font-size:11px;color:#8b93a7">GDP · 季度</div><div style="font-size:26px;font-weight:800;color:#f5a623">4.6<span style="font-size:11px;font-weight:400"> %</span></div><div style="font-size:10px;color:#818cf8">↓ -0.1pp</div></div>
-<div style="position:absolute;left:40px;top:328px;z-index:4"><div style="font-size:11px;color:#8b93a7">出口 · 月度</div><div style="font-size:26px;font-weight:800;color:#f5a623">7.2<span style="font-size:11px;font-weight:400"> %</span></div><div style="font-size:10px;color:#8b93a7">→ 持平</div></div>
-<div style="position:absolute;right:40px;top:38px;z-index:4;text-align:right"><div style="font-size:11px;color:#8b93a7">制造业PMI · 月度</div><div style="font-size:26px;font-weight:800;color:#f5a623">49.3</div><div style="font-size:10px;color:#818cf8">↓ -0.8点</div></div>
-<div style="position:absolute;right:40px;top:175px;z-index:4;text-align:right"><div style="font-size:11px;color:#8b93a7">M2 · 月度</div><div style="font-size:26px;font-weight:800;color:#f5a623">7.2<span style="font-size:11px;font-weight:400"> %</span></div><div style="font-size:10px;color:#818cf8">↓ -0.3pp</div></div>
-<div style="position:absolute;right:40px;top:328px;z-index:4;text-align:right"><div style="font-size:11px;color:#8b93a7">PPI · 月度</div><div style="font-size:26px;font-weight:800;color:#f5a623">5.0<span style="font-size:11px;font-weight:400"> %</span></div><div style="font-size:10px;color:#fbbf24">↑ +1.2pp</div></div>
-</div>
-<style>
-.ckpi{background:#12141a;border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:14px 18px;display:flex;flex-direction:column;justify-content:center}
-.ckpi .ck-k{font-size:12px;color:#8b93a7}
-.ckpi .ck-v{font-size:34px;font-weight:800;color:#f5a623;margin:4px 0}
-.ckpi .ck-t{font-size:12px}
-.ckpi .ck-i{font-size:11px;color:#9aa1a6;margin-top:8px;line-height:1.6;border-top:1px solid rgba(255,255,255,0.06);padding-top:8px}
-.ck1{border-radius:16px 16px 50px 16px;background:linear-gradient(135deg, rgba(245,166,35,0.18), rgba(245,166,35,0.05))}
-.ck2{border-radius:16px 16px 16px 50px;background:linear-gradient(225deg, rgba(229,72,77,0.18), rgba(229,72,77,0.05))}
-.ck3{border-radius:16px 50px 50px 16px;background:linear-gradient(135deg, rgba(139,92,246,0.18), rgba(139,92,246,0.05))}
-.ck4{border-radius:50px 16px 16px 50px;background:linear-gradient(225deg, rgba(34,181,115,0.18), rgba(34,181,115,0.05))}
-.ck5{border-radius:16px 50px 16px 16px;background:linear-gradient(135deg, rgba(14,165,233,0.18), rgba(14,165,233,0.05))}
-.ck6{border-radius:50px 16px 16px 16px;background:linear-gradient(225deg, rgba(245,179,1,0.18), rgba(245,179,1,0.05))}
-</style>
-<script>
-(function(){
-const segs=[{l:'实体增长',v:12.0,c:'#f5a623'},{l:'价格稳定',v:59.0,c:'#e5484d'},{l:'信用扩张',v:4.0,c:'#22b573'},{l:'外需',v:34.5,c:'#0ea5e9'},{l:'市场预期',v:43.0,c:'#8b5cf6'}];
-const cx=220,cy=220,rO=212,rI=96,g=document.getElementById('csegs');if(!g)return;
-segs.forEach((s,i)=>{const a0=(i*72-90)*Math.PI/180,a1=((i+1)*72-90)*Math.PI/180;
-const p=document.createElementNS('http://www.w3.org/2000/svg','path');
-p.setAttribute('d',`M${cx+rO*Math.cos(a0)},${cy+rO*Math.sin(a0)} A${rO},${rO} 0 0 1 ${cx+rO*Math.cos(a1)},${cy+rO*Math.sin(a1)} L${cx+rI*Math.cos(a1)},${cy+rI*Math.sin(a1)} A${rI},${rI} 0 0 0 ${cx+rI*Math.cos(a0)},${cy+rI*Math.sin(a0)} Z`);
-p.setAttribute('fill',s.c);p.setAttribute('fill-opacity','0.22');p.setAttribute('stroke',s.c);p.setAttribute('stroke-opacity','0.6');p.setAttribute('stroke-width','1.5');g.appendChild(p);
-const am=(a0+a1)/2,lx=cx+((rO+rI)/2)*Math.cos(am),ly=cy+((rO+rI)/2)*Math.sin(am);
-const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',lx);t.setAttribute('y',ly);t.setAttribute('text-anchor','middle');t.setAttribute('dominant-baseline','middle');t.setAttribute('fill','#fff');t.setAttribute('font-size','12');t.setAttribute('font-weight','600');
-const t1=document.createElementNS('http://www.w3.org/2000/svg','tspan');t1.setAttribute('x',lx);t1.setAttribute('dy','-8');t1.textContent=s.l;
-const t2=document.createElementNS('http://www.w3.org/2000/svg','tspan');t2.setAttribute('x',lx);t2.setAttribute('dy','16');t2.textContent=s.v;
-t.appendChild(t1);t.appendChild(t2);g.appendChild(t);});
-})();
-</script>
-
 <div class="ov"><h2 class="sec-h">📊 最新数据一览</h2><div class="ovt" style="display:flex;gap:16px;max-height:none;overflow:visible">
 <div style="flex:1"><table class="ov-table">
 <thead><tr><th>指标</th><th>最新值</th><th>月份</th><th>环比</th><th>同比</th><th>趋势</th><th>备注</th></tr></thead><tbody>
