@@ -58,7 +58,7 @@
   footer b { color: var(--text); }
   /* mobile */
   /* 总览表双表平分宽度 */
-.ovt > div{flex:1 !important;min-width:0 !important}.ovt .ov-table{width:100% !important}.ovt > div:last-child .ov-table td:first-child{max-width:170px !important;overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important}
+.ovt > div{flex:1 !important;min-width:0 !important}.ovt .ov-table{width:100% !important}.ovt > div:last-child .ov-table{table-layout:fixed !important}.ovt > div:last-child .ov-table td:first-child{width:155px !important;overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important}
 /* 强制主内容铺满：覆盖所有 max-width 限制 */
 main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, main#main .ind-section, main#main .cal {max-width:none !important;width:100% !important;margin-left:0 !important;margin-right:0 !important}
 @media (max-width: 1800px) and (min-width: 1401px) {
