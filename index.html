@@ -836,7 +836,8 @@ function initCharts() {
         splitLine: {lineStyle: {color: '#232733'}}},
       dataZoom: pts.length > 60 ? [{type: 'slider', height: 20, bottom: 4,
         backgroundColor: '#1d2029', borderColor: '#2e3342',
-        textStyle: {color: '#8b93a7'}}] : [],
+        textStyle: {color: '#8b93a7'},
+        start: Math.max(0, (pts.length - 12) / pts.length * 100), end: 100}] : [],
       series: series
     };
     chart.setOption(option);
