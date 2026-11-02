@@ -116,7 +116,7 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 .interp .lb{font-weight:700;color:#7db4ff}
 /* phone refinements (768px and below): vertical stack, larger touch-friendly text */
 @media (max-width: 768px) {
-  .ind-body{display:grid !important;grid-template-areas:"header header" "sidebar main" !important;grid-template-rows:auto 1fr !important;grid-template-columns:auto 1fr !important;gap:0 !important;min-height:100vh}
+  .ind-body{display:flex !important;gap:0 !important}
 header{grid-area:header !important}
 aside#sidebar{grid-area:sidebar !important}
 main#main{grid-area:main !important;min-width:0 !important}
