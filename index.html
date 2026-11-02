@@ -57,7 +57,9 @@
             border-top: 1px solid var(--border); background: var(--panel); }
   footer b { color: var(--text); }
   /* mobile */
-  @media (max-width: 1400px) {
+  /* 强制主内容铺满：覆盖所有 max-width 限制 */
+main#main, main#main > .score, main#main > .kpis, main#main > .ov, main#main > .ovt, main#main > .ind-section, main#main > .cal {max-width:none !important;width:100% !important;margin-left:0 !important;margin-right:0 !important}
+@media (max-width: 1400px) {
   .ovt{flex-direction:column !important}
   .ovt .ov-table{width:100% !important}
 }
