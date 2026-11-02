@@ -9,9 +9,9 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --bg: #14161c; --panel: #1d2029; --panel2: #232733;
-    --border: #2e3342; --text: #e6e9f0; --muted: #8b93a7;
-    --accent: #3b82f6; --accent2: #22d3ee; --green: #22c55e; --red: #ef4444;
+    --bg: #14161c; --panel: #0e1015; --panel2: #12141a;
+    --border: #23262e; --text: #e6e9f0; --muted: #8b93a7;
+    --accent: #f5a623; --accent2: #22d3ee; --green: #22c55e; --red: #ef4444;
   }
   body { font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
          background: var(--bg); color: var(--text); font-size: 14px; }
@@ -82,7 +82,7 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 
 /* v2 top sections */
 .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:8px 2px;max-width:100%;margin:0}
-.kpi{background:#16181f;border:1px solid #262a34;border-radius:8px;padding:10px 10px;min-height:96px}
+.kpi{background:#0c0e12;border:1px solid #12141a;border-radius:8px;padding:10px 10px;min-height:96px}
 .kpi .k{font-size:11px;color:#8b93a3}
 .kpi .v{font-size:20px;font-weight:700;color:#fff;margin-top:2px}
 .kpi .v .u{font-size:11px;color:#8b93a3;font-weight:400}
@@ -91,8 +91,8 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 .dn{color:#4ade80}
 .fl{color:#8b93a3}
 .ov{max-width:1400px;margin:0 auto;padding:0 12px 8px}
-.ov h2,.sec-h{font-size:13px;color:#fff;padding:6px 0 6px 10px;border-left:3px solid #3b82f6;margin:8px 0 6px}
-.ovt{background:#16181f;border:1px solid #262a34;border-radius:8px;overflow:hidden;max-height:340px;overflow-y:auto}
+.ov h2,.sec-h{font-size:13px;color:#fff;padding:6px 0 6px 10px;border-left:3px solid #f5a623;margin:8px 0 6px}
+.ovt{background:#0c0e12;border:1px solid #12141a;border-radius:8px;overflow:hidden;max-height:340px;overflow-y:auto}
 .ovt tr.hl td{background:#1a2233}
 .ov-table th:not(:first-child),.ov-table td:not(:first-child){text-align:center !important}
 .ov-table th,.ov-table td{white-space:nowrap;line-height:2}
@@ -101,22 +101,22 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 .ov-table th:nth-child(6),.ov-table td:nth-child(6){padding-left:2px;padding-right:2px}
 .score{background:linear-gradient(135deg,#16283f,#12141b);border:1px solid #26405f;border-radius:8px;padding:10px 12px;margin:0 12px 8px;}
 .score .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}
-.score .num{font-size:34px;font-weight:800;color:#60a5fa}
+.score .num{font-size:34px;font-weight:800;color:#f5a623}
 .score .lbl{font-size:11px;color:#8b93a3}
 .score .bars{display:flex;gap:48px;flex-wrap:wrap;justify-content:center}
 .bar-item{text-align:center;min-width:64px}
 .bar-item .n{font-size:10px;color:#8b93a3}
 .bar-item .v{font-size:13px;font-weight:700;color:#fff}
-.bar-item .b{height:4px;background:#262a34;border-radius:2px;overflow:hidden;margin-top:3px}
-.bar-item .f{height:100%;background:#60a5fa}
-.cal{background:#16181f;border:1px solid #262a34;border-radius:8px;padding:8px 12px;margin:0 12px 8px;}
+.bar-item .b{height:4px;background:#12141a;border-radius:2px;overflow:hidden;margin-top:3px}
+.bar-item .f{height:100%;background:#f5a623}
+.cal{background:#0c0e12;border:1px solid #12141a;border-radius:8px;padding:8px 12px;margin:0 12px 8px;}
 .cal h3{font-size:12px;color:#fbbf24;margin-bottom:4px}
 .cal ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap}
 .cal li{font-size:12px;padding:2px 0}
-.cal .d{color:#60a5fa;font-weight:600;margin-right:6px}
-.interp{background:#1e3a5f;border-left:4px solid #2f7de1;padding:8px 12px;margin:0 0 8px;border-radius:0 6px 6px 0;font-size:12.5px;color:#dbe7f5;line-height:1.6}
+.cal .d{color:#f5a623;font-weight:600;margin-right:6px}
+.interp{background:#3d2b12;border-left:4px solid #2f7de1;padding:8px 12px;margin:0 0 8px;border-radius:0 6px 6px 0;font-size:12.5px;color:#fdeecd;line-height:1.6}
 .interp .lb{color:#7db4f5;font-weight:700;font-size:11px;display:block;margin-bottom:2px}
-.interp{background:#1e3a5f;border-left:4px solid #3b82f6;padding:10px 14px;margin:0 18px 12px;border-radius:0 6px 6px 0;font-size:13px;line-height:1.7;color:#dbe4f3}
+.interp{background:#3d2b12;border-left:4px solid #f5a623;padding:10px 14px;margin:0 18px 12px;border-radius:0 6px 6px 0;font-size:13px;line-height:1.7;color:#dbe4f3}
 .interp .lb{font-weight:700;color:#7db4ff}
 /* phone refinements (768px and below): vertical stack, larger touch-friendly text */
 @media (max-width: 768px) {
@@ -134,7 +134,7 @@ main#main{grid-area:main !important;min-width:0 !important}
   .data-table th{line-height:1.15 !important;padding:0 !important;text-align:center !important}
   .data-table th span{line-height:1.15 !important;display:block !important;margin-top:0 !important}
   .data-table td{padding:0 !important;white-space:nowrap !important;line-height:1.6 !important;text-align:center !important}
-  .data-table th:first-child,.data-table td:first-child{border-right:1px solid #2d3139 !important;padding-right:1px !important}
+  .data-table th:first-child,.data-table td:first-child{border-right:1px solid #1a1d24 !important;padding-right:1px !important}
   .data-table th:last-child,.data-table td:last-child{padding-left:1px !important;padding-right:0 !important}
   .kpis{grid-template-columns:repeat(2,1fr) !important;gap:6px !important;padding:6px 2px !important;max-width:100% !important}
   .kpi{min-height:0 !important;padding:8px 6px !important}
@@ -161,16 +161,11 @@ main#main{grid-area:main !important;min-width:0 !important}
   .score{margin:0 4px 8px !important}
 }
 
-/* v5: 大色块分区 - KPI卡片整块微着色 */
-.kpis .kpi{border-radius:16px !important;padding:14px 12px !important;border:1px solid rgba(255,255,255,0.06) !important}
-.kpis .kpi:nth-child(1){background:linear-gradient(135deg, rgba(249,115,22,0.16), rgba(249,115,22,0.06)) !important}
-.kpis .kpi:nth-child(2){background:linear-gradient(135deg, rgba(228,72,77,0.16), rgba(228,72,77,0.06)) !important}
-.kpis .kpi:nth-child(3){background:linear-gradient(135deg, rgba(155,89,182,0.16), rgba(155,89,182,0.06)) !important}
-.kpis .kpi:nth-child(4){background:linear-gradient(135deg, rgba(47,164,107,0.16), rgba(47,164,107,0.06)) !important}
-.kpis .kpi:nth-child(5){background:linear-gradient(135deg, rgba(26,188,156,0.16), rgba(26,188,156,0.06)) !important}
-.kpis .kpi:nth-child(6){background:linear-gradient(135deg, rgba(245,166,35,0.16), rgba(245,166,35,0.06)) !important}
-/* v5: 卡片圆角统一16px */
-.ind-section, .ov-table, .score{border-radius:16px !important}
+/* v5.1 Buildly 深色暖橙规范 - 单主色 */
+.kpis .kpi .v{color:#f5a623 !important}
+.score .num{color:#f5a623 !important}
+.kpis .kpi{border-radius:16px !important;background:#12141a !important}
+.ind-section,.ov-table,.score{border-radius:16px !important}
 </style>
 </head>
 <body>
@@ -250,7 +245,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div class="ib-views"><h2 class="sec-h">🏦 投行观点 <span style="font-size:11px;color:#6b7280;font-weight:400">（公开媒体摘要，非研报原文）</span></h2>
 <div style="display:flex;flex-direction:column;gap:12px;padding:0 4px">
 
-<div class="ib-card" style="background:#1a1d24;border:1px solid #2d3139;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">高盛《中国2026年展望》 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-01</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>预计2026年中国GDP增长<strong style="color:#fff">4.8%</strong>，高于市场共识的4.5%</li>
@@ -261,7 +256,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：东方财富、财联社摘要</div>
 </div>
 
-<div class="ib-card" style="background:#1a1d24;border:1px solid #2d3139;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">摩根士丹利 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-01</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>中国政策宽松是"缓冲"不是"提振"</li>
@@ -272,7 +267,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：公开媒体摘要</div>
 </div>
 
-<div class="ib-card" style="background:#1a1d24;border:1px solid #2d3139;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">瑞银 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-01</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>看好中国股市持续上行，AI和科技是长期盈利增长关键动力</li>
@@ -282,7 +277,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：东方财富摘要</div>
 </div>
 
-<div class="ib-card" style="background:#1a1d24;border:1px solid #2d3139;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">野村 <span style="font-size:11px;color:#6b7280;font-weight:400">2026</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>AI投资继续推动全球经济增长，2026年全球增长加速</li>
@@ -292,7 +287,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：东方财富、21世纪经济报道摘要</div>
 </div>
 
-<div class="ib-card" style="background:#1a1d24;border:1px solid #2d3139;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">摩根大通《2026年中国经济展望》 <span style="font-size:11px;color:#6b7280;font-weight:400">2025-11</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>2026年GDP预测<strong style="color:#fff">4.4%</strong>（从4.2%上调），低于2025年的4.9%</li>
@@ -908,8 +903,8 @@ function initCharts() {
     const isPMI = PMI_IDS.includes(id);
     const series = [{
       name: '数值', type: 'line', data: vals, smooth: true,
-      lineStyle: {width: 2, color: '#3b82f6'},
-      itemStyle: {color: '#3b82f6'},
+      lineStyle: {width: 2, color: '#f5a623'},
+      itemStyle: {color: '#f5a623'},
       symbol: 'none', areaStyle: {color: 'rgba(59,130,246,0.12)'}
     }];
     if (isPMI) {
@@ -923,14 +918,14 @@ function initCharts() {
       backgroundColor: 'transparent',
       grid: {left: 48, right: 16, top: 24, bottom: 40},
       tooltip: {trigger: 'axis', confine: true,
-        backgroundColor: '#232733', borderColor: '#2e3342', textStyle: {color: '#e6e9f0'}},
+        backgroundColor: '#12141a', borderColor: '#23262e', textStyle: {color: '#e6e9f0'}},
       xAxis: {type: 'category', data: dates,
         axisLabel: {color: '#8b93a7', fontSize: 10, rotate: 45, interval: Math.ceil(dates.length/12)}},
       yAxis: {type: 'value', scale: true,
         axisLabel: {color: '#8b93a7', fontSize: 10},
-        splitLine: {lineStyle: {color: '#232733'}}},
+        splitLine: {lineStyle: {color: '#12141a'}}},
       dataZoom: pts.length > 60 ? [{type: 'slider', height: 20, bottom: 4,
-        backgroundColor: '#1d2029', borderColor: '#2e3342',
+        backgroundColor: '#0e1015', borderColor: '#23262e',
         textStyle: {color: '#8b93a7'},
         start: Math.max(0, (pts.length - 12) / pts.length * 100), end: 100}] : [],
       series: series
