@@ -203,6 +203,9 @@ main#main{grid-area:main !important;min-width:0 !important}
     .ov-table { table-layout: auto !important; width: 640px !important; min-width: 640px !important; }
     .ov-table th, .ov-table td { white-space: nowrap !important; font-size: 11px !important; padding: 6px 8px !important; }
   }
+
+  /* v9.23: 侧栏跳转时标题不被顶栏遮挡 */
+  [id^="sec-"] { scroll-margin-top: 75px; }
 </style>
 </head>
 <body>
