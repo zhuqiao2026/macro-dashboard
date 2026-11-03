@@ -36,7 +36,7 @@
   .side-item:hover { background: var(--panel2); color: #fff; }
   .side-item.active { background: var(--panel2); color: #fff; border-left-color: var(--accent); }
   /* main */
-  main { flex: 1; padding: 18px 12px 40px; max-width: 1560px; }
+  main { flex: 1; padding: 18px 8px 40px; max-width: none; }
   .ind-section { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
                   margin-bottom: 18px; overflow: hidden; }
   .ind-header { padding: 14px 18px 10px; border-bottom: 1px solid var(--border); }
@@ -180,21 +180,28 @@ main#main{grid-area:main !important;min-width:0 !important}
   /* v9.13: 总览表列宽重分配 */
   .ovt { flex-wrap: nowrap !important; }
   .ov-table { table-layout: fixed !important; width: 100% !important; }
-  .ov-table th, .ov-table td { padding: 7px 6px !important; line-height: 1.6 !important; font-size: 12px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ov-table th, .ov-table td { padding: 6px 4px !important; line-height: 1.6 !important; font-size: 12px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ov-table td:last-child { color: #d1d5db !important; }
   .ov-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04) !important; }
   /* 左右表分隔：各自成卡片 */
   .ovt > div { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 0 4px; overflow: hidden; }
-  /* 列宽 v9.15：每列都给足（指标22/最新值13/月份12/环比9/同比9/趋势6/解读29） */
-  .ov-table th:nth-child(1), .ov-table td:nth-child(1) { width: 24% !important; }
-  .ov-table th:nth-child(2), .ov-table td:nth-child(2) { width: 13% !important; }
-  .ov-table th:nth-child(3), .ov-table td:nth-child(3) { width: 12% !important; }
+  /* 列宽 v9.17：像素宽度，小屏保底 */
+  .ov-table { table-layout: fixed !important; width: 100% !important; }
+  .ov-table th:nth-child(1), .ov-table td:nth-child(1) { width: 190px !important; }
+  .ov-table th:nth-child(2), .ov-table td:nth-child(2) { width: 78px !important; }
+  .ov-table th:nth-child(3), .ov-table td:nth-child(3) { width: 80px !important; }
   .ov-table th:nth-child(4), .ov-table td:nth-child(4),
-  .ov-table th:nth-child(5), .ov-table td:nth-child(5) { width: 9% !important; }
-  .ov-table th:nth-child(6), .ov-table td:nth-child(6) { width: 7% !important; min-width: 44px; }
-  .ov-table th:nth-child(7), .ov-table td:nth-child(7) { width: 26% !important; }
-
-  /* v9.16: 手机端总览表恢复横向滚动 */
+  .ov-table th:nth-child(5), .ov-table td:nth-child(5) { width: 58px !important; }
+  .ov-table th:nth-child(6), .ov-table td:nth-child(6) { width: 40px !important; }
+  .ov-table th:nth-child(7), .ov-table td:nth-child(7) { width: auto !important; font-size: 11px !important; }
+  /* 超出时卡片横向滚动兜底 */
+  @media (min-width: 769px) {
+    .ovt > div { overflow-x: auto !important; }
+  }
+  /* 保底宽度超出时卡片横向滚动（桌面小屏兜底） */
+  @media (min-width: 769px) {
+    .ovt > div { overflow-x: auto !important; }
+  }/* v9.16: 手机端总览表恢复横向滚动 */
   @media (max-width: 768px) {
     .ovt { flex-direction: column !important; }
     .ovt > div { overflow-x: auto !important; max-width: 100% !important; -webkit-overflow-scrolling: touch; }
@@ -211,7 +218,7 @@ main#main{grid-area:main !important;min-width:0 !important}
   <select id="catSelect"><option value="">全部分类</option></select>
 <div style="margin-left:auto;font-size:12px;color:#6b7280;white-space:nowrap">版权所有 © 2026 Joel</div></header>
 <div class="layout">
-  <aside id="sidebar"><div class="side-cat"><div class="side-cat-title">总览</div><div class="side-item" data-id="hero" data-name="宏观水温">宏观水温</div><div class="side-item" data-id="overview" data-name="最新数据一览">最新数据一览</div><div class="side-item" data-id="ibviews" data-name="投行观点">投行观点</div></div><div class="side-cat"><div class="side-cat-title">采购经理指数</div><div class="side-item" data-id="pmi_mfg" data-name="制造业采购经理指数">制造业采购经理指数</div><div class="side-item" data-id="pmi_nonmfg" data-name="非制造业采购经理指数">非制造业采购经理指数</div><div class="side-item" data-id="pmi_caixin" data-name="RatingDog制造业PMI（原财新）">RatingDog制造业PMI（原财新）</div></div><div class="side-cat"><div class="side-cat-title">国民经济核算</div><div class="side-item" data-id="gdp" data-name="国内生产总值(GDP)">国内生产总值(GDP)</div><div class="side-item" data-id="gdp_primary" data-name="GDP第一产业">GDP第一产业</div><div class="side-item" data-id="gdp_secondary" data-name="GDP第二产业">GDP第二产业</div><div class="side-item" data-id="gdp_tertiary" data-name="GDP第三产业">GDP第三产业</div></div><div class="side-cat"><div class="side-cat-title">工业</div><div class="side-item" data-id="ind_prod" data-name="规模以上工业增加值">规模以上工业增加值</div></div><div class="side-cat"><div class="side-cat-title">固定资产投资</div><div class="side-item" data-id="fai" data-name="固定资产投资(不含农户)">固定资产投资(不含农户)</div></div><div class="side-cat"><div class="side-cat-title">消费</div><div class="side-item" data-id="retail" data-name="社会消费品零售总额">社会消费品零售总额</div></div><div class="side-cat"><div class="side-cat-title">价格指数</div><div class="side-item" data-id="cpi" data-name="居民消费价格指数(CPI)">居民消费价格指数(CPI)</div><div class="side-item" data-id="cpi_city" data-name="CPI城市">CPI城市</div><div class="side-item" data-id="cpi_rural" data-name="CPI农村">CPI农村</div><div class="side-item" data-id="ppi" data-name="工业生产者出厂价格指数(PPI)">工业生产者出厂价格指数(PPI)</div></div><div class="side-cat"><div class="side-cat-title">对外贸易</div><div class="side-item" data-id="exports" data-name="出口(美元计)">出口(美元计)</div><div class="side-item" data-id="imports" data-name="进口(美元计)">进口(美元计)</div><div class="side-item" data-id="trade_balance" data-name="贸易差额(美元计)">贸易差额(美元计)</div></div><div class="side-cat"><div class="side-cat-title">金融</div><div class="side-item" data-id="m2" data-name="M2货币供应">M2货币供应</div><div class="side-item" data-id="m1" data-name="M1货币供应">M1货币供应</div><div class="side-item" data-id="m0" data-name="M0流通中现金">M0流通中现金</div><div class="side-item" data-id="lpr1y" data-name="1年期LPR">1年期LPR</div><div class="side-item" data-id="lpr5y" data-name="5年期LPR">5年期LPR</div><div class="side-item" data-id="fx_reserves" data-name="外汇储备">外汇储备</div></div><div class="side-cat"><div class="side-cat-title">房地产</div><div class="side-item" data-id="house_bj" data-name="新建商品住宅价格指数-北京">新建商品住宅价格指数-北京</div><div class="side-item" data-id="house_sh" data-name="新建商品住宅价格指数-上海">新建商品住宅价格指数-上海</div></div><div class="side-cat"><div class="side-cat-title">财政</div><div class="side-item" data-id="tax" data-name="税收收入">税收收入</div></div></aside>
+  <aside id="sidebar"><div class="side-cat"><div class="side-cat-title">总览</div><div class="side-item" data-id="hero" data-name="宏观水温">宏观水温</div><div class="side-item" data-id="overview" data-name="最新数据一览">最新数据一览</div><div class="side-item" data-id="ibviews" data-name="投行观点">投行观点</div></div><div class="side-cat"><div class="side-cat-title">采购经理指数</div><div class="side-item" data-id="pmi_mfg" data-name="制造业采购经理指数">制造业采购经理指数</div><div class="side-item" data-id="pmi_nonmfg" data-name="非制造业采购经理指数">非制造业采购经理指数</div><div class="side-item" data-id="pmi_caixin" data-name="RatingDog PMI（原财新）">RatingDog PMI（原财新）</div></div><div class="side-cat"><div class="side-cat-title">国民经济核算</div><div class="side-item" data-id="gdp" data-name="国内生产总值(GDP)">国内生产总值(GDP)</div><div class="side-item" data-id="gdp_primary" data-name="GDP第一产业">GDP第一产业</div><div class="side-item" data-id="gdp_secondary" data-name="GDP第二产业">GDP第二产业</div><div class="side-item" data-id="gdp_tertiary" data-name="GDP第三产业">GDP第三产业</div></div><div class="side-cat"><div class="side-cat-title">工业</div><div class="side-item" data-id="ind_prod" data-name="规模以上工业增加值">规模以上工业增加值</div></div><div class="side-cat"><div class="side-cat-title">固定资产投资</div><div class="side-item" data-id="fai" data-name="固定资产投资(不含农户)">固定资产投资(不含农户)</div></div><div class="side-cat"><div class="side-cat-title">消费</div><div class="side-item" data-id="retail" data-name="社会消费品零售总额">社会消费品零售总额</div></div><div class="side-cat"><div class="side-cat-title">价格指数</div><div class="side-item" data-id="cpi" data-name="居民消费价格指数(CPI)">居民消费价格指数(CPI)</div><div class="side-item" data-id="cpi_city" data-name="CPI城市">CPI城市</div><div class="side-item" data-id="cpi_rural" data-name="CPI农村">CPI农村</div><div class="side-item" data-id="ppi" data-name="工业生产者出厂价格指数(PPI)">工业生产者出厂价格指数(PPI)</div></div><div class="side-cat"><div class="side-cat-title">对外贸易</div><div class="side-item" data-id="exports" data-name="出口(美元计)">出口(美元计)</div><div class="side-item" data-id="imports" data-name="进口(美元计)">进口(美元计)</div><div class="side-item" data-id="trade_balance" data-name="贸易差额(美元计)">贸易差额(美元计)</div></div><div class="side-cat"><div class="side-cat-title">金融</div><div class="side-item" data-id="m2" data-name="M2货币供应">M2货币供应</div><div class="side-item" data-id="m1" data-name="M1货币供应">M1货币供应</div><div class="side-item" data-id="m0" data-name="M0流通中现金">M0流通中现金</div><div class="side-item" data-id="lpr1y" data-name="1年期LPR">1年期LPR</div><div class="side-item" data-id="lpr5y" data-name="5年期LPR">5年期LPR</div><div class="side-item" data-id="fx_reserves" data-name="外汇储备">外汇储备</div></div><div class="side-cat"><div class="side-cat-title">房地产</div><div class="side-item" data-id="house_bj" data-name="新建商品住宅价格指数-北京">新建商品住宅价格指数-北京</div><div class="side-item" data-id="house_sh" data-name="新建商品住宅价格指数-上海">新建商品住宅价格指数-上海</div></div><div class="side-cat"><div class="side-cat-title">财政</div><div class="side-item" data-id="tax" data-name="税收收入">税收收入</div></div></aside>
   <main id="main">
 <div class="hero-final" id="sec-hero" style="background:#0e1015;border:1px solid #23262e;border-radius:20px;margin:8px 2px;padding:18px;display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:12px">
@@ -244,7 +251,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <thead><tr><th>指标</th><th>最新值</th><th>月份</th><th>环比</th><th>同比</th><th>趋势</th><th>解读</th></tr></thead><tbody>
 <tr class="hl"><td>制造业采购经理指数</td><td style="font-weight:700;color:#fff">49.3</td><td>2026-10</td><td class="dn">-1.60</td><td class="up">+0.3</td><td class="dn" style="font-size:14px">↓</td><td style="color:#6b7280;font-size:11px">跌破荣枯线，景气回落</td></tr>
 <tr><td>非制造业采购经理指数</td><td style="font-weight:700;color:#fff">49.7</td><td>2026-10</td><td class="dn">-1.00</td><td class="up">+0.3</td><td class="dn" style="font-size:14px">↓</td><td style="color:#6b7280;font-size:11px">服务业同步收缩</td></tr>
-<tr class="hl"><td>RatingDog制造业PMI（原财新）</td><td style="font-weight:700;color:#fff">52.0</td><td>2026-10</td><td class="up">/</td><td class="dn">/</td><td class="up" style="font-size:14px">↑</td><td style="color:#6b7280;font-size:11px">中小企业景气扩张</td></tr>
+<tr class="hl"><td>RatingDog PMI（原财新）</td><td style="font-weight:700;color:#fff">52.0</td><td>2026-10</td><td class="up">/</td><td class="dn">/</td><td class="up" style="font-size:14px">↑</td><td style="color:#6b7280;font-size:11px">中小企业景气扩张</td></tr>
 <tr><td>居民消费价格指数(CPI)</td><td style="font-weight:700;color:#fff">100.9</td><td>2026-09</td><td class="up">+0.2</td><td style="color:#4b5563">+0.9</td><td class="up" style="font-size:14px">↑</td><td style="color:#6b7280;font-size:11px">温和通胀，涨幅扩大</td></tr>
 <tr class="hl"><td>CPI城市</td><td style="font-weight:700;color:#fff">100.9</td><td>2026-09</td><td class="up">+0.2</td><td class="up">+0.9</td><td class="up" style="font-size:14px">↑</td><td style="color:#6b7280;font-size:11px">城市通胀平稳</td></tr>
 <tr><td>CPI农村</td><td style="font-weight:700;color:#fff">100.8</td><td>2026-09</td><td class="up">+0.4</td><td class="up">+0.8</td><td class="up" style="font-size:14px">↑</td><td style="color:#6b7280;font-size:11px">农村涨幅略低</td></tr>
@@ -399,9 +406,9 @@ main#main{grid-area:main !important;min-width:0 !important}
     <div class="ind-chart" id="chart-pmi_nonmfg"></div>
   </div>
 </section>
-<section class="ind-section" id="sec-pmi_caixin" data-name="RatingDog制造业PMI（原财新）">
+<section class="ind-section" id="sec-pmi_caixin" data-name="RatingDog PMI（原财新）">
   <div class="ind-header">
-    <h3>RatingDog制造业PMI（原财新）</h3>
+    <h3>RatingDog PMI（原财新）</h3>
     <div class="ind-meta">
       <span class="latest">最新 <b>52.0</b>（2026-10）</span>
       <span>频率：月度</span>
@@ -409,7 +416,7 @@ main#main{grid-area:main !important;min-width:0 !important}
       <span>更新：2026-11-01 16:27</span>
       <span>共 154 期</span>
     </div>
-<div class="interp">💡：RatingDog制造业PMI（原财新） 52.0（2026-10），重回扩张区间。近6个月在48.3～51.2之间大幅波动，中小企业景气度有所回升，但稳定性不足，持续性待观察。</div>
+<div class="interp">💡：RatingDog PMI（原财新） 52.0（2026-10），重回扩张区间。近6个月在48.3～51.2之间大幅波动，中小企业景气度有所回升，但稳定性不足，持续性待观察。</div>
   </div>
   <div class="ind-body">
     <div class="ind-table-wrap">
@@ -944,7 +951,7 @@ main#main{grid-area:main !important;min-width:0 !important}
   <b>数据说明</b><br>
   · 数据经 akshare 获取，原始发布为国家统计局（东方财富／金十数据中转）。<br>
   · NBS 官方 V2.0 数据接口经实测返回 404（官方文档过时），暂用 akshare 主源。<br>
-  · 工业增加值、出口、进口、贸易差额、外汇储备、RatingDog制造业PMI（原财新）已于 2026-11-03 依据官方发布更新至 2026-09/10。<br>
+  · 工业增加值、出口、进口、贸易差额、外汇储备、RatingDog PMI（原财新）已于 2026-11-03 依据官方发布更新至 2026-09/10。<br>
   · 房价数据仅含北京、上海两城（akshare 该接口仅提供这两城）。<br>
   · 本看板为静态数据快照，仅供个人研究参考，不构成投资建议。
 </footer>
