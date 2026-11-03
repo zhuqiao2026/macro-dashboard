@@ -177,10 +177,14 @@ main#main{grid-area:main !important;min-width:0 !important}
 .kpis .kpi:nth-child(5){background:linear-gradient(135deg, rgba(14,165,233,0.22), rgba(14,165,233,0.08)) !important}
 .kpis .kpi:nth-child(6){background:linear-gradient(135deg, rgba(245,179,1,0.22), rgba(245,179,1,0.08)) !important}
 
-  /* v9.11: 总览表可读性优化 */
-  .ov-table th, .ov-table td { padding: 9px 10px !important; line-height: 1.7 !important; }
-  .ov-table td:last-child { color: #d1d5db !important; font-size: 12.5px !important; }
+  /* v9.12: 总览表可读性优化（修横向溢出） */
+  .ovt { flex-wrap: nowrap !important; }
+  .ov-table { table-layout: fixed !important; width: 100% !important; }
+  .ov-table th, .ov-table td { padding: 7px 6px !important; line-height: 1.6 !important; font-size: 12px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ov-table td:last-child, .ov-table th:last-child { color: #d1d5db !important; white-space: normal !important; min-width: 110px; }
   .ov-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04) !important; }
+  /* 左右表分隔：各自成卡片 */
+  .ovt > div { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 0 4px; overflow: hidden; }
 </style>
 </head>
 <body>
