@@ -82,7 +82,7 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 
 /* v2 top sections */
 .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:8px 2px;max-width:100%;margin:0}
-.kpi{background:#0c0e12;border:1px solid #12141a;border-radius:8px;padding:10px 10px;min-height:96px}
+.kpi{background:#0c0e12;border:1px solid #12141a;border-radius:12px;padding:10px 10px;min-height:96px}
 .kpi .k{font-size:11px;color:#8b93a3}
 .kpi .v{font-size:20px;font-weight:700;color:#fff;margin-top:2px}
 .kpi .v .u{font-size:11px;color:#8b93a3;font-weight:400}
@@ -92,14 +92,14 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 .fl{color:#8b93a3}
 .ov{max-width:1400px;margin:0 auto;padding:0 12px 8px}
 .ov h2,.sec-h{font-size:13px;color:#fff;padding:6px 0 6px 10px;border-left:3px solid #f5a623;margin:8px 0 6px}
-.ovt{background:#0c0e12;border:1px solid #12141a;border-radius:8px;overflow:hidden;max-height:340px;overflow-y:auto}
+.ovt{background:#0c0e12;border:1px solid #12141a;border-radius:12px;overflow:hidden;max-height:340px;overflow-y:auto}
 .ovt tr.hl td{background:#1a2233}
 .ov-table th:not(:first-child),.ov-table td:not(:first-child){text-align:center !important}
 .ov-table th,.ov-table td{white-space:nowrap;line-height:2}
 .ov-table th:nth-child(4),.ov-table td:nth-child(4),
 .ov-table th:nth-child(5),.ov-table td:nth-child(5){padding-left:6px;padding-right:6px}
 .ov-table th:nth-child(6),.ov-table td:nth-child(6){padding-left:2px;padding-right:2px}
-.score{background:linear-gradient(135deg,#16283f,#12141b);border:1px solid #26405f;border-radius:8px;padding:10px 12px;margin:0 12px 8px;}
+.score{background:linear-gradient(135deg,#16283f,#12141b);border:1px solid #26405f;border-radius:12px;padding:10px 12px;margin:0 12px 8px;}
 .score .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}
 .score .num{font-size:34px;font-weight:800;color:#f5a623}
 .score .lbl{font-size:11px;color:#8b93a3}
@@ -109,7 +109,7 @@ main#main, main#main .score, main#main .kpis, main#main .ov, main#main .ovt, mai
 .bar-item .v{font-size:13px;font-weight:700;color:#fff}
 .bar-item .b{height:4px;background:#12141a;border-radius:2px;overflow:hidden;margin-top:3px}
 .bar-item .f{height:100%;background:#f5a623}
-.cal{background:#0c0e12;border:1px solid #12141a;border-radius:8px;padding:8px 12px;margin:0 12px 8px;}
+.cal{background:#0c0e12;border:1px solid #12141a;border-radius:12px;padding:8px 12px;margin:0 12px 8px;}
 .cal h3{font-size:12px;color:#fbbf24;margin-bottom:4px}
 .cal ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap}
 .cal li{font-size:12px;padding:2px 0}
@@ -207,9 +207,9 @@ main#main{grid-area:main !important;min-width:0 !important}
 
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-content:start">
-<div style="background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(239,68,68,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">CPI·月度</div><div style="font-size:24px;font-weight:800;color:#f87171;line-height:1.2">0.9<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#f87171">↑+0.1pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">温和通胀，涨幅扩大。食品企稳，非食品上行。</div></div><div style="background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(239,68,68,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">PPI·月度</div><div style="font-size:24px;font-weight:800;color:#f87171;line-height:1.2">5.0<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#f87171">↑+1.2pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">工业品回升。上游传导。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">PMI·月度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">49.3</div><div style="font-size:10px;color:#4ade80">↓-0.8点</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">跌破荣枯线。新订单生产双弱。</div></div><div style="background:linear-gradient(135deg,rgba(148,163,184,.12),rgba(148,163,184,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">出口·月度</div><div style="font-size:24px;font-weight:800;color:#94a3b8;line-height:1.2">7.2<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#8b93a7">→持平</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">出口强劲。机电高新拉动。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">M2·月度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">7.2<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#4ade80">↓-0.3pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">流动性充裕。信贷放缓。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">GDP·季度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">4.6<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#4ade80">↓-0.1pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">增速放缓。投资弱，出口撑。</div></div>
+<div style="background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(239,68,68,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">CPI·月度</div><div style="font-size:24px;font-weight:800;color:#f87171;line-height:1.2">0.9<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#f87171">↑+0.1pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">温和通胀，涨幅扩大。食品企稳，非食品上行。</div></div><div style="background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(239,68,68,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">PPI·月度</div><div style="font-size:24px;font-weight:800;color:#f87171;line-height:1.2">5.0<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#f87171">↑+1.2pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">工业品回升。上游传导。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">PMI·月度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">49.3</div><div style="font-size:10px;color:#4ade80">↓-0.8点</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">跌破荣枯线。新订单生产双弱。</div></div><div style="background:linear-gradient(135deg,rgba(148,163,184,.12),rgba(148,163,184,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">出口·月度</div><div style="font-size:24px;font-weight:800;color:#94a3b8;line-height:1.2">7.2<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#8b93a7">→持平</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">出口强劲。机电高新拉动。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">M2·月度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">7.2<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#4ade80">↓-0.3pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">流动性充裕。信贷放缓。</div></div><div style="background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 12px;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><div><div style="font-size:10px;color:#8b93a7">GDP·季度</div><div style="font-size:24px;font-weight:800;color:#4ade80;line-height:1.2">4.6<span style="font-size:10px">%</span></div><div style="font-size:10px;color:#4ade80">↓-0.1pp</div></div><div style="font-size:10px;color:#9aa1a6;line-height:1.65">增速放缓。投资弱，出口撑。</div></div>
 </div>
-<div style="grid-column:1/-1;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px 14px;font-size:12px;line-height:1.75;color:#9aa1a6">
+<div style="grid-column:1/-1;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;font-size:12px;line-height:1.75;color:#9aa1a6">
 <div style="font-size:13px;font-weight:700;color:#f5a623;margin-bottom:6px">宏观水温</div>
 <b style="color:#d0d5de">公式：</b>水温 = 实体增长×35% + 价格稳定×20% + 信用扩张×15% + 外需×15% + 市场预期×15% = 11.2×0.35+59.0×0.2+4.0×0.15+92.2×0.15+43.0×0.15 = <b style="color:#d0d5de">36.6</b><br>
 <b style="color:#d0d5de">分项含义：</b>①实体增长：GDP与工业增加值在历史中的百分位（11.2=只比11.2%的历史时期好）；②价格稳定：CPI/PPI偏离2%目标越远分越低；③信用扩张：M2增速的历史百分位；④外需：出口额的历史百分位；⑤市场预期：由PMI换算（50+(PMI-50)×10）。<b style="color:#d0d5de">50分是荣枯线（0-100分制，50为中性）。</b><div style="margin-top:6px;color:#6b7280;font-size:11px">权重依据：参考 Conference Board 中国领先指数与 Fidelity 中国活动指数的权重逻辑，生产类指标赋予更高权重。</div>
@@ -266,7 +266,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div class="ib-views"><h2 class="sec-h">🏦 投行观点 <span style="font-size:11px;color:#6b7280;font-weight:400">（公开媒体摘要，非研报原文；2026年11月更新）</span></h2>
 <div style="display:flex;flex-direction:column;gap:12px;padding:0 4px">
 
-<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:12px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">高盛 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-11，宏观上调至4.8%</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>上调2026年中国GDP至<strong style="color:#fff">4.8%</strong>（前4.3%）、2027年至<strong style="color:#fff">4.7%</strong>，高于市场共识</li>
@@ -277,7 +277,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：Hellenic Shipping News（高盛研报转载）、搜狐摘要</div>
 </div>
 
-<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:12px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">摩根士丹利 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-10-26，战术谨慎</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>离岸中资股或再跌<strong style="color:#fff">10～15%</strong>至历史估值底部（约8倍前瞻市盈率）</li>
@@ -288,7 +288,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：彭博（经Newspim/Strategist.media转载）</div>
 </div>
 
-<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:12px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">瑞银 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-09-15，下调目标</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>MSCI中国2026年底目标下调<strong style="color:#fff">100→78点</strong>（维持10%盈利增长，估值更保守）</li>
@@ -299,7 +299,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：Longbridge/智通财经（2026-09-15）</div>
 </div>
 
-<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:12px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">野村 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-10-13，宏观偏空</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>GDP：2026年<strong style="color:#fff">4.5%</strong>（2025年5.0%），2027年放缓至<strong style="color:#fff">4.0%</strong></li>
@@ -310,7 +310,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="font-size:11px;color:#6b7280;margin-top:6px">来源：IndexBox（野村全球经济展望月报转载）</div>
 </div>
 
-<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:8px;padding:12px">
+<div class="ib-card" style="background:#0c0e12;border:1px solid #1a1d24;border-radius:12px;padding:12px">
 <div style="font-weight:700;color:#fff;margin-bottom:6px">摩根大通 <span style="font-size:11px;color:#6b7280;font-weight:400">2026-10-20，K型企稳</span></div>
 <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13px;line-height:1.7">
 <li>三季度GDP 4.5%超预期，前三季度4.6%达标，<strong style="color:#fff">无需大规模额外刺激</strong></li>
