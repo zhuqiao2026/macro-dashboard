@@ -988,7 +988,7 @@ function initCharts() {
       tooltip: {trigger: 'axis', confine: true,
         backgroundColor: '#12141a', borderColor: '#23262e', textStyle: {color: '#e6e9f0'}},
       xAxis: {type: 'category', data: dates,
-        axisLabel: {color: '#8b93a7', fontSize: 10, rotate: 45, interval: Math.ceil(dates.length/5)}},
+        axisLabel: {color: '#8b93a7', fontSize: 10, rotate: 45, interval: 0, hideOverlap: true}},
       yAxis: {type: 'value', scale: true,
         axisLabel: {color: '#8b93a7', fontSize: 10},
         splitLine: {lineStyle: {color: '#12141a'}}},
