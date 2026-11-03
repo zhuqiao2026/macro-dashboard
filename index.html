@@ -185,12 +185,14 @@ main#main{grid-area:main !important;min-width:0 !important}
   .ov-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04) !important; }
   /* 左右表分隔：各自成卡片 */
   .ovt > div { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 0 4px; overflow: hidden; }
-  /* 列宽：指标列放宽，环比/同比/趋势收窄 */
+  /* 列宽 v9.14：最新值/月份收窄，空间给解读 */
   .ov-table th:nth-child(1), .ov-table td:nth-child(1) { width: 22% !important; }
+  .ov-table th:nth-child(2), .ov-table td:nth-child(2),
+  .ov-table th:nth-child(3), .ov-table td:nth-child(3) { width: 11% !important; }
   .ov-table th:nth-child(4), .ov-table td:nth-child(4),
   .ov-table th:nth-child(5), .ov-table td:nth-child(5),
   .ov-table th:nth-child(6), .ov-table td:nth-child(6) { width: 8% !important; }
-  .ov-table th:nth-child(7), .ov-table td:nth-child(7) { width: 18% !important; }
+  .ov-table th:nth-child(7), .ov-table td:nth-child(7) { width: 26% !important; }
 </style>
 </head>
 <body>
