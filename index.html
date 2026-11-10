@@ -230,7 +230,7 @@ main#main{grid-area:main !important;min-width:0 !important}
 </div></div>
 <div style="display:flex;flex-direction:column;gap:8px">
 <div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">实体增长<div style="font-size:11px;color:#8b93a7">GDP+工业百分位</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:11%;border-radius:5px;background:linear-gradient(90deg,#16a34a,#4ade80)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#4ade80">11.2</div></div>
-<div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">价格稳定<div style="font-size:11px;color:#8b93a7">偏离2%目标越远分越低</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:50%;border-radius:5px;background:linear-gradient(90deg,#dc2626,#f87171)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#f87171">59.0</div></div>
+<div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">价格稳定<div style="font-size:11px;color:#8b93a7">偏离2%目标越远分越低</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:50%;border-radius:5px;background:linear-gradient(90deg,#dc2626,#f87171)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#f87171">50.0</div></div>
 <div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">信用扩张<div style="font-size:11px;color:#8b93a7">M2百分位</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:4%;border-radius:5px;background:linear-gradient(90deg,#16a34a,#4ade80)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#4ade80">4.0</div></div>
 <div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">外需<div style="font-size:11px;color:#8b93a7">出口百分位</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:92%;border-radius:5px;background:linear-gradient(90deg,#16a34a,#4ade80)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#4ade80">92.2</div></div>
 <div style="display:grid;grid-template-columns:84px 1fr 40px;gap:8px;align-items:center"><div style="font-size:13px;line-height:1.25">市场预期<div style="font-size:11px;color:#8b93a7">PMI换算</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:43%;border-radius:5px;background:linear-gradient(90deg,#65a30d,#a3e635)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#a3e635">43.0</div></div>
@@ -243,8 +243,21 @@ main#main{grid-area:main !important;min-width:0 !important}
 </div>
 <div style="grid-column:1/-1;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.75;color:#8b93a7">
 <div style="font-size:15px;font-weight:700;color:#f5a623;margin-bottom:6px">宏观水温</div>
-<b style="color:#d1d5db">公式：</b>水温 = 实体增长×35% + 价格稳定×20% + 信用扩张×15% + 外需×15% + 市场预期×15% = 11.2×0.35+50.0×0.2+4.0×0.15+92.2×0.15+43.0×0.15 = <b style="color:#d1d5db">36.6</b><br>
-<b style="color:#d1d5db">分项含义：</b>①实体增长：GDP与工业增加值在历史中的百分位（11.2=只比11.2%的历史时期好）；②价格稳定：CPI/PPI偏离2%目标越远分越低；③信用扩张：M2增速的历史百分位；④外需：出口额的历史百分位；⑤市场预期：由PMI换算（50+(PMI-50)×10）。<b style="color:#d1d5db">50分是荣枯线（0-100分制，50为中性）。</b><div style="margin-top:6px;color:#6b7280;font-size:12px">权重依据：参考 Conference Board 中国领先指数与 Fidelity 中国活动指数的权重逻辑，生产类指标赋予更高权重。</div>
+<div style="font-size:15px;font-weight:700;color:#f5a623;margin-bottom:6px">宏观判断 <span style="font-size:11px;font-weight:400;color:#8b93a7">更新：2026-11-10</span></div>
+<div style="font-size:14px;line-height:1.8;color:#d1d5db">
+<b style="color:#fff">水温 34.8，仍在偏冷区间，需求端是主要拖累。</b>实体增长 11.2 分（历史后 11%）、信用扩张 4.0 分双双探底，内需疲弱是当前经济的核心矛盾。<br>
+✱ <b style="color:#fff">PPI-CPI 剪刀差扩至 5.0 个百分点，创 52 个月新高。</b>10 月 PPI 同比 5.7%（上游涨价、反内卷政策推升），CPI 仅 0.7%（食品 -2.9% 拖累），生产热、消费冷，企业利润承压。<br>
+✱ <b style="color:#fff">外需仍是唯一亮点。</b>出口百分位 92.2 分，10 月出口同比 +36.3%，机电高新拉动；但贸易顺差扩大也意味着外部压力在累积。<br>
+✱ <b style="color:#fff">政策信号：</b>姚洋访谈提示"纠偏"已过头、官员避责普遍，地方债"几乎不可能"靠地方自身还清；关注 12 月政治局会议对明年政策的定调。
+</div>
+<details style="margin-top:10px;font-size:12px;color:#8b93a7">
+<summary style="cursor:pointer;color:#6b7280;font-size:12px">方法论 ▸ 公式与权重说明</summary>
+<div style="margin-top:6px;line-height:1.7">
+<b style="color:#d1d5db">公式：</b>水温 = 实体增长×35% + 价格稳定×20% + 信用扩张×15% + 外需×15% + 市场预期×15% = 11.2×0.35+50.0×0.2+4.0×0.15+92.2×0.15+43.0×0.15 = <b style="color:#d1d5db">34.8</b><br>
+<b style="color:#d1d5db">分项含义：</b>①实体增长：GDP与工业增加值在历史中的百分位（11.2=只比11.2%的历史时期好）；②价格稳定：CPI/PPI偏离2%目标越远分越低；③信用扩张：M2增速的历史百分位；④外需：出口额的历史百分位；⑤市场预期：由PMI换算（50+(PMI-50)×10）。<b style="color:#d1d5db">50分是荣枯线（0-100分制，50为中性）。</b><br>
+<span style="color:#6b7280">权重依据：参考 Conference Board 中国领先指数与 Fidelity 中国活动指数的权重逻辑，生产类指标赋予更高权重。</span>
+</div>
+</details>
 </div></div>
 <div class="ov" id="sec-overview"><h2 class="sec-h">📊 最新数据一览</h2><div class="ovt" style="display:flex;gap:10px;max-height:none;overflow:visible">
 <div style="flex:1"><table class="ov-table">
