@@ -234,6 +234,10 @@ main#main{grid-area:main !important;min-width:0 !important}
 <div style="display:grid;grid-template-columns:96px 1fr 40px;gap:6px;align-items:center"><div style="font-size:13px;line-height:1.25">信用扩张<div style="font-size:11px;color:#8b93a7">M2百分位</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:4%;border-radius:5px;background:linear-gradient(90deg,#16a34a,#4ade80)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#4ade80">4.0</div></div>
 <div style="display:grid;grid-template-columns:96px 1fr 40px;gap:6px;align-items:center"><div style="font-size:13px;line-height:1.25">外需<div style="font-size:11px;color:#8b93a7">出口百分位</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:92%;border-radius:5px;background:linear-gradient(90deg,#16a34a,#4ade80)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#4ade80">92.2</div></div>
 <div style="display:grid;grid-template-columns:96px 1fr 40px;gap:6px;align-items:center"><div style="font-size:13px;line-height:1.25">市场预期<div style="font-size:11px;color:#8b93a7">PMI换算</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i style="position:absolute;left:0;top:0;bottom:0;width:43%;border-radius:5px;background:linear-gradient(90deg,#65a30d,#a3e635)"></i></div><div style="font-size:14px;font-weight:700;text-align:right;color:#a3e635">43.0</div></div>
+<div style="height:1px;background:rgba(255,255,255,.09);margin:5px 0 3px"></div>
+<div style="font-size:11px;color:#6b7280;margin-bottom:2px">双轴拆分 · 内需冷、外需热，分化 67.5 分</div>
+<div style="display:grid;grid-template-columns:96px 1fr 40px;gap:6px;align-items:center"><div style="font-size:13px;line-height:1.25">内需轴<div style="font-size:11px;color:#8b93a7">增长+价格+信用+预期</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i id="wt-dom-bar" style="position:absolute;left:0;top:0;bottom:0;width:25%;border-radius:5px;background:linear-gradient(90deg,#2563eb,#60a5fa)"></i></div><div id="wt-dom" style="font-size:14px;font-weight:700;text-align:right;color:#60a5fa">24.7</div></div>
+<div style="display:grid;grid-template-columns:96px 1fr 40px;gap:6px;align-items:center"><div style="font-size:13px;line-height:1.25">外需轴<div style="font-size:11px;color:#8b93a7">出口</div></div><div style="height:18px;border-radius:5px;background:rgba(255,255,255,.05);position:relative;overflow:hidden"><i id="wt-ext-bar" style="position:absolute;left:0;top:0;bottom:0;width:92%;border-radius:5px;background:linear-gradient(90deg,#ea580c,#fb923c)"></i></div><div id="wt-ext" style="font-size:14px;font-weight:700;text-align:right;color:#fb923c">92.2</div></div>
 </div>
 </div>
 
@@ -253,7 +257,10 @@ main#main{grid-area:main !important;min-width:0 !important}
 <summary style="cursor:pointer;color:#6b7280;font-size:12px">方法论 ▸ 公式与权重说明</summary>
 <div style="margin-top:6px;line-height:1.7">
 <b style="color:#d1d5db">公式：</b>水温 = 实体增长×35% + 价格稳定×20% + 信用扩张×15% + 外需×15% + 市场预期×15% = 11.2×0.35+50.0×0.2+4.0×0.15+92.2×0.15+43.0×0.15 = <b style="color:#d1d5db">34.8</b><br>
-<b style="color:#d1d5db">分项含义：</b>①实体增长：GDP与工业增加值在历史中的百分位（11.2=只比11.2%的历史时期好）；②价格稳定：CPI/PPI偏离2%目标越远分越低；③信用扩张：M2增速的历史百分位；④外需：出口额的历史百分位；⑤市场预期：由PMI换算（50+(PMI-50)×10）。<b style="color:#d1d5db">50分是荣枯线（0-100分制，50为中性）。</b><br>
+<b style="color:#d1d5db">分项含义：</b>①实体增长：GDP与工业增加值在历史中的百分位（11.2=只比11.2%的历史时期好）；②价格稳定：CPI/PPI偏离2%目标越远分越低；③信用扩张：M2增速的历史百分位；④外需：出口额的历史百分位；⑤市场预期：由PMI换算（50+(PMI-50)×10）。<br>
+<b style="color:#d1d5db">档位（按 2008-01～2026-10 共 226 个月历史分布定）：</b>30 以下偏冷（低于中位数 30.5）· 30～40 中性 · 40～50 好（历史前约 15%）· 50 以上暖（历史前约 9%）。50 不是中性点，中位数 30.5 才是实际中点；理论满分 100 历史上从未达到，历史最高 75.2（2021-03）。<br>
+<b style="color:#d1d5db">双轴拆分：</b>内需轴 =（实体增长×35% + 价格稳定×20% + 信用扩张×15% + 市场预期×15%）÷ 85% = 24.7；外需轴 = 外需 = 92.2。综合 = 内需轴×85% + 外需轴×15%。两轴分化 67.5 分，说明经济冷热不均：内需偏冷、外需极热，单看总分会掩盖分化。<br>
+<b style="color:#d1d5db">颜色：</b>圆环与数字按分数渐变——偏冷蓝、中性绿、好黄橙、暖红；双轴各自按本轴分数着色。<br>
 <span style="color:#6b7280">权重依据：参考 Conference Board 中国领先指数与 Fidelity 中国活动指数的权重逻辑，生产类指标赋予更高权重。</span>
 </div>
 </details>
@@ -1082,6 +1089,79 @@ initCharts();
   }
   tick();
   setInterval(tick, 30000);
+})();
+</script>
+<script>
+(function(){
+  // 水温颜色渐变：冷蓝 → 中绿 → 暖橙红，按分数插值；圆环、数字、光晕同步变色
+  var STOPS = [
+    [0,'#1e40af'],[15,'#3b82f6'],[25,'#06b6d4'],[30,'#22c55e'],
+    [35,'#4ade80'],[40,'#a3e635'],[45,'#facc15'],[50,'#fb923c'],
+    [60,'#f97316'],[75,'#ef4444'],[100,'#b91c1c']
+  ];
+  function hx(h){ return [parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]; }
+  function toHex(rgb){ return '#'+rgb.map(function(v){ v=Math.max(0,Math.min(255,Math.round(v))); var s=v.toString(16); return s.length<2?'0'+s:s; }).join(''); }
+  function colorAt(s){
+    s=Math.max(0,Math.min(100,s));
+    for(var i=0;i<STOPS.length-1;i++){
+      var a=STOPS[i], b=STOPS[i+1];
+      if(s>=a[0] && s<=b[0]){
+        var t=(s-a[0])/(b[0]-a[0]||1), ca=hx(a[1]), cb=hx(b[1]);
+        return toHex([ca[0]+(cb[0]-ca[0])*t, ca[1]+(cb[1]-ca[1])*t, ca[2]+(cb[2]-ca[2])*t]);
+      }
+    }
+    return STOPS[STOPS.length-1][1];
+  }
+  function darken(hex,f){ var c=hx(hex); return toHex([c[0]*f,c[1]*f,c[2]*f]); }
+  function rgba(hex,a){ var c=hx(hex); return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')'; }
+  function band(s){ if(s<30) return '偏冷'; if(s<40) return '中性'; if(s<50) return '好'; return '暖'; }
+  var numEl = document.querySelector('div[style*="font-size:44px"]');
+  if(!numEl) return;
+  var score = parseFloat(numEl.textContent);
+  if(isNaN(score)) return;
+  var col = colorAt(score), dark = darken(col,0.55);
+  numEl.style.color = col;
+  var ringEl = document.querySelector('div[style*="conic-gradient"]');
+  if(ringEl) ringEl.style.background = 'conic-gradient(from 180deg,'+col+','+col+','+dark+','+col+','+col+')';
+  var circleEl = numEl.parentElement;
+  if(circleEl) circleEl.style.boxShadow = '0 0 0 5px '+rgba(col,0.10)+',0 0 32px '+rgba(col,0.22)+',inset 0 1px 0 rgba(255,255,255,0.1)';
+  var lab = null, divs = circleEl ? circleEl.querySelectorAll('div') : [];
+  for(var i=0;i<divs.length;i++){ if(divs[i].textContent.indexOf('宏观水温')===0){ lab=divs[i]; break; } }
+  if(lab) lab.textContent = '宏观水温 / 100 · ' + band(score);
+  // 双轴着色：按本轴分数给数字和条形上色（条宽 = 分数%）
+  function axisPair(idNum, idBar){
+    var nEl = document.getElementById(idNum), bEl = document.getElementById(idBar);
+    if(!nEl) return;
+    var v = parseFloat(nEl.textContent);
+    if(isNaN(v)) return;
+    var c = colorAt(v), d = darken(c,0.6);
+    nEl.style.color = c;
+    if(bEl){ bEl.style.background = 'linear-gradient(90deg,'+d+','+c+')'; bEl.style.width = Math.round(v)+'%'; }
+  }
+  axisPair('wt-dom','wt-dom-bar');
+  axisPair('wt-ext','wt-ext-bar');
+  // 五个分项也按分数着色（数字 + 条形）
+  function colorComponent(label){
+    var rows = document.querySelectorAll('div[style*="grid-template-columns:96px"]');
+    for(var i=0;i<rows.length;i++){
+      var row = rows[i];
+      var txt = row.textContent;
+      if(txt.indexOf(label)===0 && txt.charAt(label.length)!=='轴'){
+        var valEl = row.querySelector('div[style*="text-align:right"]');
+        var barEl = row.querySelector('i');
+        if(valEl){
+          var v = parseFloat(valEl.textContent);
+          if(!isNaN(v)){
+            var c = colorAt(v), d = darken(c,0.6);
+            valEl.style.color = c;
+            if(barEl) barEl.style.background = 'linear-gradient(90deg,'+d+','+c+')';
+          }
+        }
+        return;
+      }
+    }
+  }
+  ['实体增长','价格稳定','信用扩张','外需','市场预期'].forEach(colorComponent);
 })();
 </script>
 </body>
